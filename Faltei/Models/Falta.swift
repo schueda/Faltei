@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Falta: Identifiable {
+    let quantidade: Int
+    let date: Date
+    
+    let id = UUID()
+}

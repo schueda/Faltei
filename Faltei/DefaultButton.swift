@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DefaultButton: View {
     let text: String
-    let color: Color?
+    var color: Color?
     let click: () -> Void
     
     init(text: String, color: Color? = nil, click: @escaping () -> Void) {
@@ -32,7 +32,6 @@ struct DefaultButton: View {
             .foregroundColor(.white)
             .bold()
             .cornerRadius(10)
-            .padding(.horizontal)
         }
 
     }

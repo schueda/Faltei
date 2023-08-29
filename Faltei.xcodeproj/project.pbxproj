@@ -8,17 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		619EDD7D2A9628A00055D5C7 /* FalteiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD7C2A9628A00055D5C7 /* FalteiApp.swift */; };
-		619EDD7F2A9628A00055D5C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD7E2A9628A00055D5C7 /* ContentView.swift */; };
+		619EDD7F2A9628A00055D5C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD7E2A9628A00055D5C7 /* HomeView.swift */; };
 		619EDD812A9628A20055D5C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619EDD802A9628A20055D5C7 /* Assets.xcassets */; };
 		619EDD842A9628A20055D5C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619EDD832A9628A20055D5C7 /* Preview Assets.xcassets */; };
+		619EDD8B2A962FBB0055D5C7 /* HistoricoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD8A2A962FBA0055D5C7 /* HistoricoView.swift */; };
+		619EDD8D2A962FD90055D5C7 /* ConfiguracoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD8C2A962FD90055D5C7 /* ConfiguracoesView.swift */; };
+		619EDD8F2A963C9B0055D5C7 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD8E2A963C9B0055D5C7 /* DefaultButton.swift */; };
+		619EDD912A9647650055D5C7 /* Periodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD902A9647650055D5C7 /* Periodo.swift */; };
+		619EDD932A9647E40055D5C7 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD922A9647E40055D5C7 /* Materia.swift */; };
+		619EDD962A9648C00055D5C7 /* Falta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD952A9648C00055D5C7 /* Falta.swift */; };
+		619EDD982A964EDB0055D5C7 /* MateriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD972A964EDB0055D5C7 /* MateriaCell.swift */; };
+		619EDD9A2A9797250055D5C7 /* NewMateriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD992A9797250055D5C7 /* NewMateriaCell.swift */; };
+		619EDD9C2A980FC20055D5C7 /* NewMateriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD9B2A980FC20055D5C7 /* NewMateriaView.swift */; };
+		619EDD9E2A980FCD0055D5C7 /* MateriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD9D2A980FCD0055D5C7 /* MateriaView.swift */; };
+		619EDDA02A98D4D80055D5C7 /* FaltasProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDD9F2A98D4D80055D5C7 /* FaltasProgressStyle.swift */; };
+		619EDDA22A9A9EB00055D5C7 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDDA12A9A9EB00055D5C7 /* View+.swift */; };
+		619EDDA42A9AA8490055D5C7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDDA32A9AA8490055D5C7 /* CalendarView.swift */; };
+		619EDDA62A9CCB960055D5C7 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDDA52A9CCB960055D5C7 /* CalendarManager.swift */; };
+		619EDDA92A9CE0E90055D5C7 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619EDDA82A9CE0E90055D5C7 /* Color+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		619EDD792A9628A00055D5C7 /* Faltei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faltei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619EDD7C2A9628A00055D5C7 /* FalteiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalteiApp.swift; sourceTree = "<group>"; };
-		619EDD7E2A9628A00055D5C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		619EDD7E2A9628A00055D5C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		619EDD802A9628A20055D5C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619EDD832A9628A20055D5C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		619EDD8A2A962FBA0055D5C7 /* HistoricoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoView.swift; sourceTree = "<group>"; };
+		619EDD8C2A962FD90055D5C7 /* ConfiguracoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracoesView.swift; sourceTree = "<group>"; };
+		619EDD8E2A963C9B0055D5C7 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		619EDD902A9647650055D5C7 /* Periodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Periodo.swift; sourceTree = "<group>"; };
+		619EDD922A9647E40055D5C7 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		619EDD952A9648C00055D5C7 /* Falta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falta.swift; sourceTree = "<group>"; };
+		619EDD972A964EDB0055D5C7 /* MateriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaCell.swift; sourceTree = "<group>"; };
+		619EDD992A9797250055D5C7 /* NewMateriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMateriaCell.swift; sourceTree = "<group>"; };
+		619EDD9B2A980FC20055D5C7 /* NewMateriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMateriaView.swift; sourceTree = "<group>"; };
+		619EDD9D2A980FCD0055D5C7 /* MateriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaView.swift; sourceTree = "<group>"; };
+		619EDD9F2A98D4D80055D5C7 /* FaltasProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaltasProgressStyle.swift; sourceTree = "<group>"; };
+		619EDDA12A9A9EB00055D5C7 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		619EDDA32A9AA8490055D5C7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		619EDDA52A9CCB960055D5C7 /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		619EDDA82A9CE0E90055D5C7 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +81,20 @@
 		619EDD7B2A9628A00055D5C7 /* Faltei */ = {
 			isa = PBXGroup;
 			children = (
+				619EDDA72A9CE0D50055D5C7 /* Extensions */,
+				619EDD942A96489A0055D5C7 /* Models */,
+				619EDD8E2A963C9B0055D5C7 /* DefaultButton.swift */,
+				619EDD8A2A962FBA0055D5C7 /* HistoricoView.swift */,
 				619EDD7C2A9628A00055D5C7 /* FalteiApp.swift */,
-				619EDD7E2A9628A00055D5C7 /* ContentView.swift */,
+				619EDD7E2A9628A00055D5C7 /* HomeView.swift */,
+				619EDD9F2A98D4D80055D5C7 /* FaltasProgressStyle.swift */,
+				619EDD8C2A962FD90055D5C7 /* ConfiguracoesView.swift */,
+				619EDD972A964EDB0055D5C7 /* MateriaCell.swift */,
+				619EDD992A9797250055D5C7 /* NewMateriaCell.swift */,
+				619EDD9B2A980FC20055D5C7 /* NewMateriaView.swift */,
+				619EDD9D2A980FCD0055D5C7 /* MateriaView.swift */,
+				619EDDA32A9AA8490055D5C7 /* CalendarView.swift */,
+				619EDDA52A9CCB960055D5C7 /* CalendarManager.swift */,
 				619EDD802A9628A20055D5C7 /* Assets.xcassets */,
 				619EDD822A9628A20055D5C7 /* Preview Content */,
 			);
@@ -65,6 +107,25 @@
 				619EDD832A9628A20055D5C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		619EDD942A96489A0055D5C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				619EDD922A9647E40055D5C7 /* Materia.swift */,
+				619EDD902A9647650055D5C7 /* Periodo.swift */,
+				619EDD952A9648C00055D5C7 /* Falta.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		619EDDA72A9CE0D50055D5C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				619EDDA12A9A9EB00055D5C7 /* View+.swift */,
+				619EDDA82A9CE0E90055D5C7 /* Color+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +198,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619EDD7F2A9628A00055D5C7 /* ContentView.swift in Sources */,
+				619EDD8F2A963C9B0055D5C7 /* DefaultButton.swift in Sources */,
+				619EDDA02A98D4D80055D5C7 /* FaltasProgressStyle.swift in Sources */,
+				619EDD7F2A9628A00055D5C7 /* HomeView.swift in Sources */,
+				619EDDA92A9CE0E90055D5C7 /* Color+.swift in Sources */,
+				619EDD8D2A962FD90055D5C7 /* ConfiguracoesView.swift in Sources */,
+				619EDDA42A9AA8490055D5C7 /* CalendarView.swift in Sources */,
+				619EDDA22A9A9EB00055D5C7 /* View+.swift in Sources */,
+				619EDD8B2A962FBB0055D5C7 /* HistoricoView.swift in Sources */,
+				619EDD9A2A9797250055D5C7 /* NewMateriaCell.swift in Sources */,
+				619EDD932A9647E40055D5C7 /* Materia.swift in Sources */,
+				619EDD9C2A980FC20055D5C7 /* NewMateriaView.swift in Sources */,
+				619EDD912A9647650055D5C7 /* Periodo.swift in Sources */,
+				619EDD982A964EDB0055D5C7 /* MateriaCell.swift in Sources */,
+				619EDD962A9648C00055D5C7 /* Falta.swift in Sources */,
+				619EDD9E2A980FCD0055D5C7 /* MateriaView.swift in Sources */,
+				619EDDA62A9CCB960055D5C7 /* CalendarManager.swift in Sources */,
 				619EDD7D2A9628A00055D5C7 /* FalteiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,8 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Materia {
+struct Materia: Identifiable {
     let name: String
     let maxFaltas: Int
+    let color: Color
+    let faltas: [Falta]
+    
+    let id = UUID()
+    
+    var faltasCount: Int {
+        faltas.reduce(0) { $0 + $1.quantidade }
+    }
 }

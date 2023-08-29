@@ -9,9 +9,27 @@ import SwiftUI
 
 @main
 struct FalteiApp: App {
+    @State private var selected: Int = 1
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView(selection: $selected) {
+                HistoricoView()
+                    .tabItem {
+                        Label("Histórico", systemImage: "clock.arrow.circlepath")
+                    }
+                    .tag(0)
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "building.columns.fill")
+                    }
+                    .tag(1)
+                ConfiguracoesView()
+                    .tabItem {
+                        Label("Configurações", systemImage: "gear")
+                    }
+                    .tag(2)
+            }
         }
     }
 }

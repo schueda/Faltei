@@ -8,74 +8,104 @@
 import SwiftUI
 
 struct CalendarView: View {
-    var color: Color
-    var date = Date()
-    let weekDays = ["dom", "seg", "ter", "qua", "qui", "sex", "sab"]
+    @StateObject var manager = CalendarManager()
+    var color: Color = .blue
+    var markedDates: [Date]
+    
+    init(color: Color, markedDates: [Date] = []) {
+        self.color = color
+        self.markedDates = markedDates
+    }
     
     var body: some View {
         VStack(spacing: 16) {
-            HStack(spacing: 16) {
-                Button {
-                    print("aaa")
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .foregroundColor(color)
-                }
-                
-                Text("Julho de 2023")
-                    .bold()
-
-                Button {
-                    print("aaa")
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(color)
-                }
-            }
             
-            HStack {
-                ForEach(weekDays, id: \.self) { wd in
-                    Text(wd)
-                        .frame(maxWidth: .infinity)
+            header()
+            weekDays()
+            
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 7)) {
+                ForEach(manager.currentMonth.pastMonthDays, id: \.self) { d in
+                    Text("\(d)")
+                        .padding(8)
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(.init(uiColor: .secondaryLabel))
+                }
+                ForEach(manager.currentMonth.days) { d in
+                    Text("\(d.number)")
+                        .bold(d.today)
+                        .padding(8)
+                        .onTapGesture {
+                            manager.mark(date: d.date)
+                        }
+                        .frame(width: 40, height: 40)
+                        .background {
+                            if d.marked {
+                                Circle()
+                                    .fill(color)
+                            }
+                        }
+                }
+                ForEach(manager.currentMonth.nextMonthDays, id: \.self) { d in
+                    Text("\(d)")
+                        .padding(8)
+                        .frame(width: 40, height: 40)
                         .foregroundColor(.init(uiColor: .secondaryLabel))
                 }
             }
+        }
+        .frame(height: 350, alignment: .top)
+        .padding()
+        .background {
+            Color.init(uiColor: .systemGray6)
+        }
+        .cornerRadius(10)
+        .onAppear {
+            manager.set(markedDates: markedDates)
+        }
+    }
+    
+    func header() -> some View {
+        HStack {
+            Button {
+                manager.goToPreviousMonth()
+            } label: {
+                Image(systemName: "chevron.left")
+                    .foregroundColor(color)
+                    .font(.title3)
+            }
             
+            Spacer()
             
-            LazyVGrid(columns: Array(repeating: GridItem(), count: 7)) {
-                Text("1")
+            Text(manager.currentMonth.name)
+                .bold()
+            
+            Spacer()
+
+            Button {
+                manager.goToNextMonth()
+            } label: {
+                Image(systemName: "chevron.right")
+                    .foregroundColor(color)
+                    .font(.title3)
             }
         }
     }
     
-    func getCurrentMonth() -> Month {
-        let calendar = Calendar.current
-        
-        let formatter = DateFormatter()
-        formatter.locale = .current
-        
-        let month = calendar.component(.month, from: date)
-        let year = calendar.component(.year, from: date)
-        
-        let days = calendar.range(of: .day, in: .month, for: date)?.count
-        
-        let name = "\(formatter.monthSymbols[month - 1]) \(year)"
-        
-        
-        let firstDayOfMonth = calendar.dateComponents([.calendar, .year, .month], from: date).date!
-        
-        let startsAt = calendar.component(.weekday, from: firstDayOfMonth)
+    func weekDays() -> some View {
+        HStack {
+            ForEach(Calendar.current.shortWeekdaySymbols, id: \.self) { wd in
+                Text(wd)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.init(uiColor: .secondaryLabel))
+            }
+        }
     }
+    
 }
 
-struct Month {
-    let name: String
-    let days: Int
-    let startsAt: Int
-}
-
-struct Calendar_Previews: PreviewProvider {
+struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        Calendar(color: Color.red)
+        CalendarView(color: .appBittersweet)
+            .padding()
     }
 }

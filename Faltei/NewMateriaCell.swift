@@ -9,7 +9,23 @@ import SwiftUI
 
 struct NewMateriaCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 8) {
+            Image(systemName: "plus")
+                .foregroundColor(.accentColor)
+                .font(.title2)
+                .bold()
+            Text("Adicionar matéria")
+                .foregroundColor(.accentColor)
+                .bold()
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)   
+        .background(Color.accentColor.opacity(0.2))
+        .cornerRadius(10)
+        .overlay( RoundedRectangle(cornerRadius: 10)
+            .strokeBorder(style: .init(lineWidth: 2))
+            .foregroundColor(Color.accentColor)
+        )
     }
 }
 
