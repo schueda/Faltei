@@ -9,6 +9,7 @@ import Foundation
 
 struct Periodo {
     let name: String
+    let startDate: Date
     let endDate: Date
     let materias: [Materia]
 }

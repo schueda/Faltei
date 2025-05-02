@@ -25,12 +25,12 @@ struct DefaultButton: View {
             HStack {
                 Spacer()
                 Text(text)
+                    .fontWeight(.bold)
                     .padding()
                 Spacer()
             }
             .background(color ?? Color.accentColor)
             .foregroundColor(.white)
-            .bold()
             .cornerRadius(10)
         }
 

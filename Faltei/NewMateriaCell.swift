@@ -13,7 +13,6 @@ struct NewMateriaCell: View {
             Image(systemName: "plus")
                 .foregroundColor(.accentColor)
                 .font(.title2)
-                .bold()
             Text("Adicionar matéria")
                 .foregroundColor(.accentColor)
                 .bold()

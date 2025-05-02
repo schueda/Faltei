@@ -61,8 +61,7 @@ struct NewMateriaView: View {
                                             .opacity(0.3)
                                             .reverseMask {
                                                 Image(systemName: "checkmark.circle")
-                                                    .font(.title2)
-                                                    .bold()
+                                                    .font(.title2.bold())
                                             }
                                     }
                                 }

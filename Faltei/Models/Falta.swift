@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct Falta: Identifiable {
+struct Falta: Identifiable, Timeable {
     let quantidade: Int
-    let date: Date
+    var description: String? = nil
+    var date: Date
     
     let id = UUID()
 }
+
+
